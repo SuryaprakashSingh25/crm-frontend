@@ -46,7 +46,7 @@ export const Entry = () => {
 
   return (
     <div className="entry-page bg-info">
-      <div class="p-5 mb-4 bg-light rounded-3 shadow">
+      <div className="p-5 mb-4 bg-light rounded-3 shadow">
         {frmLoad === "login" && (
           <LoginForm
             handleOnchange={handleOnchange}
