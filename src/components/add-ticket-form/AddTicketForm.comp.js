@@ -8,7 +8,7 @@ export const AddTicketForm = ({
   handleOnSubmit,
   handleOnchange,
   frmDt,
-  FormDataError,
+  frmDataError,
 }) => {
   return (
     <div className="bg-light add-new-ticket mt-3">
@@ -29,7 +29,7 @@ export const AddTicketForm = ({
                 required
               />
               <Form.Text className="text-danger">
-                {FormDataError.subject && "Subject is required"}
+                {frmDataError.subject && "Subject is required"}
               </Form.Text>
             </Col>
           </Form.Group>
@@ -73,5 +73,5 @@ AddTicketForm.propTypes = {
   handleOnSubmit: PropTypes.func.isRequired,
   handleOnchange: PropTypes.func.isRequired,
   frmDt: PropTypes.object.isRequired,
-  FormDataError: PropTypes.object.isRequired,
+  frmDataError: PropTypes.object.isRequired,
 };
